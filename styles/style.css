@@ -12,13 +12,13 @@ nav {
   background-color: #34699a;
   color: white;
   padding: 20px;
+  text-align: center;
 }
 
 li {
   display: inline;
   padding: 15px;
   list-style: none;
-  /* border: 1px solid white; */
   width: 200px;
   text-align: center;
 }
@@ -32,6 +32,10 @@ li {
   font-weight: bold;
 }
 
+.navbar-flex li {
+  width: fit-content;
+}
+
 .navbar-flex ul {
   display: flex;
   flex-direction: row;
@@ -41,11 +45,21 @@ li {
 
 /* Task 3 */
 
+.wrapper {
+  text-align: center;
+}
+
+.wrapper h1 {
+  padding: 20px;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(7, 80px);
   grid-template-rows: repeat(5, 40px);
   grid-template-areas: "row1 row1 row1 row1 row1 row1 row1";
+  text-align: center;
+  justify-content: center;
   align-items: center;
   text-align: center;
   gap: 10px;
@@ -55,6 +69,12 @@ li {
   padding: 10px;
   background-color: #e5edff;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+.container div:hover:not(.output) {
+  background-color: blue;
+  color: white;
 }
 
 div .grid-span {
@@ -91,6 +111,10 @@ div .output {
   .navbar-flex ul {
     flex-direction: column;
   }
+
+  .navbar-flex li {
+    width: 200px;
+  }
 }
 
 /* Medium screen */
@@ -104,5 +128,9 @@ div .output {
   /* Task 2 */
   .navbar-flex ul {
     flex-direction: row;
+  }
+
+  .navbar-flex li {
+    width: fit-content;
   }
 }
