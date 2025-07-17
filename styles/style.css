@@ -39,6 +39,47 @@ li {
 }
 /* Task 2 */
 
+/* Task 3 */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 80px);
+  grid-template-rows: repeat(5, 40px);
+  grid-template-areas: "row1 row1 row1 row1 row1 row1 row1";
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.container div {
+  padding: 10px;
+  background-color: #e5edff;
+  border-radius: 20px;
+}
+
+div .grid-span {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  word-spacing: 20px;
+}
+
+div .gray {
+  background-color: #f3f5f6;
+}
+
+div .blue {
+  background-color: blue;
+  color: white;
+}
+
+div .output {
+  grid-area: row1;
+  text-align: right;
+}
+
+/* Task 3 */
+
 /* Large screen */
 
 @media only screen and (max-width: 1024px) {
