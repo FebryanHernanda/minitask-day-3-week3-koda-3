@@ -23,18 +23,45 @@ li {
   text-align: center;
 }
 
-/* Medium screen */
+/* Task 1 */
+
+/* Task 2 */
+.navbar-flex nav {
+  background-color: #273f4f;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-flex ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Task 2 */
+
+/* Large screen */
+
 @media only screen and (max-width: 1024px) {
+  /* Task1 */
   li {
     display: block;
   }
-}
-
-/* Medium screen */
-@media only screen and (max-width: 768px) {
-  li {
-    display: inline;
+  /* Task 2 */
+  .navbar-flex ul {
+    flex-direction: column;
   }
 }
 
-/* Task 1 */
+/* Medium screen */
+
+@media only screen and (max-width: 768px) {
+  /* Task 1 */
+  li {
+    display: inline;
+  }
+
+  /* Task 2 */
+  .navbar-flex ul {
+    flex-direction: row;
+  }
+}
