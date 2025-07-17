@@ -106,6 +106,7 @@ div .output {
   /* Task1 */
   li {
     display: block;
+    margin: 0 auto;
   }
   /* Task 2 */
   .navbar-flex ul {
@@ -123,6 +124,7 @@ div .output {
   /* Task 1 */
   li {
     display: inline;
+    margin: 0;
   }
 
   /* Task 2 */
