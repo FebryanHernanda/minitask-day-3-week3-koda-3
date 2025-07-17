@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Task 1 */
+
+nav {
+  width: 100%;
+  height: 100%;
+  background-color: #34699a;
+  color: white;
+  padding: 20px;
+}
+
+li {
+  display: inline;
+  padding: 15px;
+  list-style: none;
+  /* border: 1px solid white; */
+  width: 200px;
+  text-align: center;
+}
+
+/* Medium screen */
+@media only screen and (max-width: 1024px) {
+  li {
+    display: block;
+  }
+}
+
+/* Medium screen */
+@media only screen and (max-width: 768px) {
+  li {
+    display: inline;
+  }
+}
+
+/* Task 1 */
